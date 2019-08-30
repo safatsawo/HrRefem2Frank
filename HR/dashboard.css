@@ -1,0 +1,111 @@
+body,
+html {
+    height: 100vh;
+    margin: 30px 0px;
+    padding: 2px;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 6% 50% auto;
+    grid-template-areas: "sidebar header " "sidebar main" "sidebar sect";
+}
+
+#dash {
+    background-color: rgb(245, 238, 238);
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: white;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(245, 238, 238);
+    border-radius: 5px;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(245, 238, 238);
+    border-radius: 5px;
+}
+
+section {
+    grid-area: sect;
+    background-color: rgb(245, 238, 238);
+    border-radius: 5px;
+}
+
+.setting {
+    font-size: 10px;
+    margin: 2px;
+}
+
+.Request_Leave {
+    margin: 7px;
+}
+
+.Update_button {
+    margin: 7px;
+}
+
+.dashboard {
+    margin: 7px;
+}
+
+.notification {
+    margin: 7px;
+}
+
+.user {
+    margin: 7px;
+}
+
+.user_profile {
+    margin: 7px;
+}
+
+h4 {
+    font-size: 20px;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+}
+
+i.fa.fa-check-circle {
+    color: blue;
+}
+
+a {
+    font-size: 57px;
+    position: absolute;
+    right: 1%;
+    top: 18px;
+}
+
+#mark {
+    font-size: 20px;
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    background-color: none;
+}
+
+.log_out {
+    position: absolute;
+    left: 10px;
+    margin: 0% 8%;
+    bottom: 19%;
+}
+
+.foot {
+    position: absolute;
+    left: 10px;
+    padding: 10px;
+    bottom: 54%;
+}

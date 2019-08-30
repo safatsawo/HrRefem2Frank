@@ -1,0 +1,120 @@
+body,
+html {
+    height: 100vh;
+    margin: 2px;
+    padding: 2px;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto, 4);
+    grid-template-areas: "header" "sect2" "main" "sect1";
+}
+
+h2 {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.main_details {
+    margin: 20px;
+    padding: 20px;
+}
+
+.side_user {
+    padding: 10px;
+}
+
+.btn-default {
+    /* font-family: Raleway-SemiBold; */
+    font-size: 13px;
+    /* color: rgba(108, 88, 179, 0.75); */
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: transparent;
+    background-color: #E5E5E5;
+    transition: all 0.3s ease 0s;
+}
+
+.setting {
+    font-size: 10px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.log_out {
+    position: absolute;
+    right: 0px;
+}
+
+.foot {
+    position: absolute;
+    left: 10px;
+    bottom: 13px;
+    padding: 10px;
+}
+
+#down {
+    text-decoration: none;
+    padding: 6px 11px;
+    background-color: white;
+    /* width: 10px; */
+    color: black;
+    margin: 10px 0px;
+}
+
+.text-input-wrapper {
+    margin: 10px 0px;
+}
+
+#update_profile {
+    text-decoration: none;
+    padding: 6px 11px;
+    background-color: white;
+    /* width: 10px; */
+    color: black;
+    margin: 10px 0px;
+}
+
+aside {
+    grid-area: sidebar;
+    /* background-color: red; */
+}
+
+header {
+    grid-area: header;
+    background-color: #E5E5E5;
+}
+
+section:nth-of-type(1) {
+    grid-area: sect1;
+    background-color: #E5E5E5;
+}
+
+section:nth-of-type(2) {
+    grid-area: sect2;
+    background-color: #E5E5E5;
+}
+
+main {
+    grid-area: main;
+    background-color: #E5E5E5;
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 27% 50% auto;
+        grid-template-rows: 5% 20% auto;
+        grid-template-areas: "sidebar header sect1" "sidebar sect2 sect1" "sidebar  main main"
+    }
+}
